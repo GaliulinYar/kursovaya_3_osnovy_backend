@@ -27,17 +27,18 @@ class Change:
         split_list = self.from_operation.split(' ')
         if len(split_list[-1]) == 16:
             split_number = 'XXXX XX' + split_list[-1][6:8] + ' ' + split_list[-1][8:-4] + ' XXXX'
-            return split_number
+
+            return ' '.join(split_list[:-1]) + ' ' + str(split_number)
         else:
             split_from = 'X' * (len(split_list[-1]) - 4) + split_list[-1][-4:]
-            return split_from
+            return ' '.join(split_list[:-1]) + ' ' + str(split_from)
 
     def change_to_operation(self):
         """метод скрывает цифры карты или счета КУДА отправлено"""
         split_list = self.to_operation.split(' ')
         if len(split_list[-1]) == 16:
             split_number = 'XXXX XX' + split_list[-1][6:8] + ' ' + split_list[-1][8:-4] + ' XXXX'
-            return split_number
+            return ' '.join(split_list[:-1]) + ' ' + str(split_number)
         else:
             split_from = 'X' * (len(split_list[-1]) - 4) + split_list[-1][-4:]
-            return split_from
+            return ' '.join(split_list[:-1]) + ' ' + str(split_from)
