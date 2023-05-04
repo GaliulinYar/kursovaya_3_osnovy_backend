@@ -1,5 +1,4 @@
 # created by virtualenv automatically
-*venv/
-*.log
-*.exe
-
+/venv/
+/.pytest_cache/
+/.idea/
