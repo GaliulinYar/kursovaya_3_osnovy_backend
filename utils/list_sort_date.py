@@ -1,5 +1,5 @@
 
-def list_sort_date(list_all):
+def list_sort_operation(list_all):
     """Функция получения списка последних, подвержденных операций"""
     list_date = []  # пустой список для сбора дат операций# пустой список для сбора дат операций
     for date in list_all:
