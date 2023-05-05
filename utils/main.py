@@ -1,5 +1,5 @@
-from get_list_func import get_list_func
-from list_sort_date import list_sort_date
+from get_list_func import get_list_operation
+from list_sort_date import list_sort_operation
 from change import Change
 
 # Ссылка на файл
@@ -9,9 +9,9 @@ FILE_OPERATION = '/home/yaroslav/kursovaya_3_osnovy_backend/operations.json'
 def main():
     # Основной код программы
     # получаем список операций EXECUTED через функцию
-    all_list = get_list_func(FILE_OPERATION)
+    all_list = get_list_operation(FILE_OPERATION)
     # Создаем список из 5 последних опреаций EXECUTED
-    list_five_last_operation = list_sort_date(all_list)
+    list_five_last_operation = list_sort_operation(all_list)
     # сортируем список по дате
     list_five_last_operation_sorty = sorted(list_five_last_operation, key=lambda x: x['date'])
 

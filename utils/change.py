@@ -12,9 +12,9 @@ class Change:
         self.to_operation = to_operation
 
     def __repr__(self):
-        return f'{self.__class__.__name__}' \
-               f'Дата = {self.date}' \
-               f'Операция от кого = {self.from_operation}' \
+        return f'{self.__class__.__name__}\n' \
+               f'Дата = {self.date}\n' \
+               f'Операция от кого = {self.from_operation}\n' \
                f'Операция кому = {self.to_operation}'
 
     def change_date(self):

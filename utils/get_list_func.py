@@ -1,7 +1,7 @@
 import json
 
 
-def get_list_func(path):
+def get_list_operation(path):
     """Функция возвращаения списка с успешными операциями EXECUTED"""
     with open(path, "r", encoding='utf-8') as file:
         list_operation = json.load(file)  # Загружаем файл операций
