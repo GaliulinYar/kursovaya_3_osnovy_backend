@@ -3,7 +3,7 @@ from list_sort_date import list_sort_operation
 from change import Change
 
 # Ссылка на файл
-FILE_OPERATION = '/home/yaroslav/kursovaya_3_osnovy_backend/operations.json'
+FILE_OPERATION = '../operations.json'
 
 
 def main():
